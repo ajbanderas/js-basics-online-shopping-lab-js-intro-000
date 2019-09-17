@@ -19,6 +19,8 @@ function viewCart() {
   var cartSummary = `In your cart, you have `
   switch(cart.length){
     case 0:
+      return "Your shopping cart is empty."
+    case 1:
       
   }
   return cartSummary
