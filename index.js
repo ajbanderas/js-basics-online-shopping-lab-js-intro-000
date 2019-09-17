@@ -20,7 +20,7 @@ function viewCart() {
   while(cart.length === 0){
     return "Your shopping cart is empty."
   }
-  while(cart.length === 1){
+  if(cart.length === 1){
     cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     return cartSummary
   }
