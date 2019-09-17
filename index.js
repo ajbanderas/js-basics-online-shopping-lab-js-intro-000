@@ -18,7 +18,8 @@ function addToCart(item) {
 function viewCart() {
   var cartSummary = `In your cart, you have `
   switch(cart.length){
-    
+    case 0:
+      
   }
   return cartSummary
 }
