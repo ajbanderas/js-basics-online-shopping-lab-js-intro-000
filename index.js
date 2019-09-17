@@ -37,11 +37,11 @@ function viewCart() {
 }
 
 function total() {
-  var total = 0
+  var cost = 0
   for(var i = 0; i < cart.length; i++){
-    total += cart[i].itemPrice
+    cost += cart[i].itemPrice
   }
-  return total
+  return cost
 }
 
 function removeFromCart(item) {
@@ -60,7 +60,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if(!!cardNumber){
-    var total = total()
+    var total = total();
     cart = []
     return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
   }else{
