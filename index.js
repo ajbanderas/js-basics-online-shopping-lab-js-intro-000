@@ -17,20 +17,7 @@ function addToCart(item) {
 
 function viewCart() {
   var cartSummary = `In your cart, you have `
-  while(cart.length === 0){
-    return "Your shopping cart is empty."
-  }
-  while(cart.length === 1){
-    cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
-    return cartSummary
-  }
-  for(var i = 0; i < cart.length; i++){
-    if(i === cart.length - 1){
-      cartSummary += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
-    }else {
-      cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}, `
-    }
-  }
+  
   return cartSummary
 }
 
