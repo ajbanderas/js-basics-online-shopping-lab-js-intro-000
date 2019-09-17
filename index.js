@@ -22,7 +22,7 @@ function viewCart() {
       cartSummary = "Your shopping cart is empty."
       break;
     case 1:
-      cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
+      cartSummary += `${cart.itemName} at $${cart.itemPrice}.`
       break;
     default:
     for(var i = 0; i < cart.length; i++){
