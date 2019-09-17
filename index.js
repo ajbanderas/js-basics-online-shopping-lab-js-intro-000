@@ -22,6 +22,7 @@ function viewCart() {
   }
   while(cart.length === 1){
     cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
+    return cartSummary
   }
   for(var i = 0; i < cart.length; i++){
     if(i === cart.length - 1){
