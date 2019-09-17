@@ -19,7 +19,8 @@ function viewCart() {
   var cartSummary = `In your cart, you have `
   switch(cart.length){
     case 0:
-      return "Your shopping cart is empty."
+      cartSummary = "Your shopping cart is empty."
+      break;
     case 1:
       cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     
