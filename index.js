@@ -23,6 +23,8 @@ function viewCart() {
       break;
     case 1:
       cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
+      break;
+    default:
     
   }
   return cartSummary
