@@ -21,7 +21,8 @@ function viewCart() {
     case 0:
       return "Your shopping cart is empty."
     case 1:
-      
+      cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
+    
   }
   return cartSummary
 }
