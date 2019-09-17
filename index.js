@@ -61,6 +61,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if(!!cardNumber){
     var total = total()
-    
+    cart = []
   }
 }
