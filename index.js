@@ -23,7 +23,7 @@ function viewCart() {
   if(cart.length === 1){
     cartSummary += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     return cartSummary
-  }
+  }else{
   for(var i = 0; i < cart.length; i++){
     if(i === cart.length - 1){
       cartSummary += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
@@ -32,6 +32,7 @@ function viewCart() {
     }
   }
   return cartSummary
+  }
 }
 
 function total() {
