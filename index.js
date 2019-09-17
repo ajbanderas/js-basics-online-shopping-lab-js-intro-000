@@ -32,7 +32,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-*/ /*  while(cart.length === 0){
+*/   while(cart.length === 0){
     return "Your shopping cart is empty."
   }
   while(cart.length === 1){
